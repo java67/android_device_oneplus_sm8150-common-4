@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018-2019 The LineageOS Project
 #
@@ -20,7 +21,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
 
 # A/B
@@ -85,8 +85,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    vendor/bliss/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -122,7 +121,6 @@ PRODUCT_PACKAGES += \
     libtinycompress.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -214,12 +212,6 @@ PRODUCT_PACKAGES += \
 # Cryptfshw
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0.vendor
-
-# Dex
-PRODUCT_PACKAGES += \
-     cppreopts.sh
-PRODUCT_PROPERTY_OVERRIDES += \
-     ro.cp_system_other_odex=1
 
 # Display
 PRODUCT_PACKAGES += \
