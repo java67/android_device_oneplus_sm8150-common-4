@@ -65,16 +65,8 @@
     <!-- FOD fingerprint scanner -->
     <bool name="config_needCustomFODView">true</bool>
 
-     <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
-
-     <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
-
-    <!-- Whether device has notification LED -->
-    <bool name="config_hasNotificationLed">false</bool>
+    <!-- Does the device have a notification/battery LED? -->
+    <bool name="config_deviceHasLED">false</bool>
 
     <!-- OnePlus uses a proprietary vibrator hal to utilize the new powerful motor since the
          OnePlus 7 Pro. This HAL expects a different format for the data instead of the usual (ms)
