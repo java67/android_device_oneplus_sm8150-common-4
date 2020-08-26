@@ -10,7 +10,7 @@
     "branch": "10"
   },
   {
-    "repository"  : "vendor_oneplus_guacamole",
+    "repository"  : "proprietary_vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "branch": "10"
   }
