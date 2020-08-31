@@ -77,7 +77,7 @@
     <bool name="config_hasVariableRefreshRate">true</bool>
 
     <!-- Default state for LiveDisplay -->
-    <bool name="config_liveDisplayAvailable">false</bool>
+    <bool name="config_liveDisplayAvailable">true</bool>
 
     <!-- Default fod pressed icon -->
     <integer name="config_pressed_fod_icon">1</integer>
