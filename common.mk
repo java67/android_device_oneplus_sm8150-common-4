@@ -362,6 +362,10 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+#PixelLiveWallpaper
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
@@ -388,6 +392,10 @@ PRODUCT_PACKAGES += \
     rcs_service_aidl.xml \
     rcs_service_api \
     rcs_service_api.xml
+
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
 
 # RIL
 PRODUCT_PACKAGES += \
