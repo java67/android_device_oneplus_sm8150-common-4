@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-corvus
+    $(LOCAL_PATH)/overlay-potato
 
 # A/B
 AB_OTA_UPDATER := true
@@ -438,15 +438,12 @@ PRODUCT_PACKAGES += \
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
 SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display
 SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
-
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msmnile
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     device/oneplus/common \
-    hardware/qcom-caf/sm8150 \
-    hardware/qcom-caf/sm8150/audio \
-    hardware/qcom-caf/sm8150/media \
-    hardware/qcom-caf/sm8150/display \
-    hardware/google/pixel
+    hardware/qcom-caf/sm8150
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -479,8 +476,8 @@ PRODUCT_PACKAGES += \
  #   vendor.lineage.touch@1.0-service.oneplus_msmnile
 
 #AOSiP Device Settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # tri-state key
 PRODUCT_PACKAGES += \
